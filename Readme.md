@@ -251,7 +251,7 @@ const adminUser: AdminUser = {
 
 ### ৪️⃣ Realistic Example: Union + Intersection একসাথে ব্যবহার
 
-ধরি, তোমার সিস্টেমে কিছু user আছে:
+ধরি, সিস্টেমে কিছু user আছে:
 
 * কিছু **Basic User**
 * কিছু **Admin User**
