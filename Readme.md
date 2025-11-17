@@ -1,4 +1,3 @@
-````md
 ## 🎯 Interview Questions - Blog Task
 
 ### 📝 ব্লগ ১: TypeScript এ `interface` আর `type` এর মধ্যে পার্থক্য
@@ -138,7 +137,7 @@ const student2: Student = {
 
 ---
 
-### ৫️⃣ ছোট রিক্যাপ:
+### ৫️⃣ রিক্যাপ:
 
 * **সাধারণত object structure → `interface` / `type` যেকোনোটা ব্যবহার হয়**
 * **Union, Intersection, Primitive alias → `type` বেশি ব্যবহার হয়**
@@ -310,7 +309,7 @@ const printUserInfo = (user: AnyUser) => {
 
 ---
 
-### ৬️⃣ ছোট রিক্যাপ:
+### ৬️⃣ রিক্যাপ:
 
 * **Union (`|`)** 👉 choice: “either this or that”
 
