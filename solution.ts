@@ -41,12 +41,12 @@ class Person{
 };
 
 
-type TBooks = {
+type RatedItem  = {
 	title: string;
 	rating: number;
 };
 
-const filterByRating = (values: TBooks[]): TBooks[] =>{
+const filterByRating = (values: RatedItem[]): RatedItem[] =>{
 	return values.filter((value)=> value.rating >= 4);
 
 };
@@ -74,6 +74,7 @@ interface Book {
 const printBookDetails = (value: Book): void =>{
   
 	console.log(`Title: ${value.title}, Author: ${value.author}, Published: ${value.publishedYear}, Available: ${value.isAvailable? 'Yes': 'No'}`);
+  
 };
 
 
