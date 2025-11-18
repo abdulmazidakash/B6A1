@@ -47,6 +47,14 @@ type RatedItem  = {
 };
 
 const filterByRating = (values: RatedItem[]): RatedItem[] =>{
+  for (let i = 0; i < values.length; i++) {
+    const rating = values[i].rating;
+
+    if (rating < 0 || rating > 5) {
+      throw new Error('Rating must be between 0 and 5');
+    }
+  }
+
 	return values.filter((value)=> value.rating >= 4);
 
 };
@@ -131,6 +139,9 @@ const calculateTotalPrice = (products: TProduct[]): number => {
     let finalPrice = totalWithoutDiscount;
 
     if (typeof discount === 'number') {
+      if (discount < 0 || discount > 100) {
+        throw new Error('Discount must be between 0 and 100');
+      }
       const discountAmount = (totalWithoutDiscount * discount) / 100;
       finalPrice = totalWithoutDiscount - discountAmount;
     }
@@ -140,7 +151,4 @@ const calculateTotalPrice = (products: TProduct[]): number => {
 
   return total;
 };
-
-
-
 
